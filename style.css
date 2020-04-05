@@ -45,20 +45,20 @@ font-family: 'Inter', sans-serif;
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--background);
-  transition: all  1s ease;
+  transition: all 1s ease;
 }
 
 /* header*/
 header {
-  padding:2rem 8rem 0 8rem;
-  
+  padding: 2rem 1.5rem 0 1.5rem;
+
   margin: 0 auto;
   max-width: 1600px;
 }
 
 .header__title {
   color: var(--secondaryText);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -158,7 +158,7 @@ input:checked + .slider:before {
 
 /*Social Media*/
 .socialMedia {
-  padding: 2rem 8rem 0 8rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   margin: 0 auto;
   max-width: 1600px;
 }
@@ -254,14 +254,14 @@ input:checked + .slider:before {
 
 /*Overview Section*/
 .overview {
-  padding:2rem 8rem;
+  padding: 2rem 1.5rem;
   margin: 0 auto;
   max-width: 1600px;
 }
 
 .overview__title {
   color: var(--secondaryText);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
@@ -273,6 +273,7 @@ input:checked + .slider:before {
   background-color: var(--cardBg);
   padding: 1.7rem;
   margin: 1rem 0;
+  width: 100%;
 }
 
 .card__info {
@@ -307,18 +308,16 @@ input:checked + .slider:before {
   margin-right: 0.3rem;
 }
 
-
 .attribution {
   font-size: 0.7rem;
   text-align: center;
-  color: var(--secondaryText)
+  color: var(--secondaryText);
 }
 
 .attribution a {
   color: var(--text);
   text-decoration: none;
 }
-
 
 @media screen and (min-width: 500px) {
   .socialMedia__list {
@@ -328,7 +327,8 @@ input:checked + .slider:before {
   }
 
   .socialMedia__card {
-    max-width: 285px;
+    max-width: 260px;
+    margin: 1rem auto;
   }
 
   .overview__list {
@@ -338,35 +338,48 @@ input:checked + .slider:before {
   }
 
   .overview__card {
-    min-width: 200px;
+    max-width: 260px;
+    margin: 1rem auto;
   }
 }
 
-
-
-@media screen and (min-width: 633px) {
-  header{
+@media screen and (min-width: 800px) {
+  header {
+    padding: 2rem 9rem 0 9rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
 
-  .header__followers{
-    border: none;
+  .socialMedia {
+    padding: 2rem 9rem 0 9rem;
+  }
+  .socialMedia__card {
+    margin: 1rem 0;
   }
 
-  .mode__title{
+  .overview {
+    padding: 2rem 9rem;
+  }
+
+  .header__followers {
+    border: none;
+    padding-bottom: 0;
+
+  }
+
+  .mode__title {
     margin-right: 1rem;
   }
 
+  .overview__title{
+    margin-bottom: 1rem;
+  }
   .socialMedia__list {
     justify-content: space-between;
   }
 
-}
-
-@media screen and (min-width: 800px) {
   .overview__card {
-    min-width: 285px;
+    margin: 1rem 0;
   }
 }
