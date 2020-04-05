@@ -1,4 +1,9 @@
-# Frontend Mentor - Social media dashboard with theme switcher
+# Frontend Mentor - Social media dashboard with theme switcher with HTML, CSS  and JavaScript
+
+En este desarrollo implementé la metodología de Mobile First, lo que permitió en el código una reducción 
+notoria de los queries. Utilice el atributo data-theme para con js cambiar fácilmente entre Dark y Light themes y lograr una mejor mantenibilidad del código a futuro.git remote add origin https://github.com/gomezlucas/FrMentor21.git
+
+
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
