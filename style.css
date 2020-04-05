@@ -304,6 +304,8 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  font-size: 0.8rem;
+
 }
 .card__stadistics p img {
   margin-right: 0.3rem;
