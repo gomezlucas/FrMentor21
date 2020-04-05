@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header>
+    <div>
+      <h1 class="header__title">
+        Social Media Dashboard
+      </h1>
+
+      <p class="header__followers">
+        Total Followers: 23,004
+      </p>
+    </div>
+
+    <span class="header__mode">
+      <p class="mode__title">
+        Dark Mode
+      </p>
+
+      <!-- Rounded switch -->
+      <label class="switch">
+        <input id="switch-toggle" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </span>
+  </header>
+
+
+  <section class="socialMedia">
+    <ul class="socialMedia__list">
+      <li class="socialMedia__card card__facebook">
+        <div class="card__social">
+          <img src="./images/icon-facebook.svg" alt="">
+          <p>
+            @nathanf
+          </p>
+        </div>
+
+        <div class="card__followers">
+          <h3>
+            1987
+          </h3>
+          <p>
+            Followers
+          </p>
+        </div>
+        <div class="card__status ">
+          <img src="./images/icon-up.svg" alt="">
+          <p class="upGreen">
+            12 Today
+          </p>
+        </div>
+      </li>
+
+      <li class="socialMedia__card card__twitter">
+        <div class="card__social"><img src="./images/icon-twitter.svg" alt="">
+          <p>
+            @nathanf
+          </p>
+        </div>
+
+        <div class="card__followers">
+          <h3>
+            1044
+          </h3>
+          <p>
+            Followers
+          </p>
+        </div>
+        <div class="card__status ">
+          <img src="./images/icon-up.svg" alt="">
+          <p class="upGreen">
+            99 Today
+          </p>
+        </div>
+      </li>
+
+
+      <li class="socialMedia__card  card__instagram">
+        <div class="card__social ">
+          <img src="./images/icon-instagram.svg" alt="">
+          <p>
+            @nathanf
+          </p>
+        </div>
+
+        <div class="card__followers">
+          <h3>
+            11k
+          </h3>
+          <p>
+            Followers
+          </p>
+        </div>
+        <div class="card__status ">
+          <img src="./images/icon-up.svg" alt="">
+          <p class="upGreen">
+            1099 Today
+          </p>
+        </div>
+      </li>
+
+      <li class="socialMedia__card card__youTube">
+        <div class="card__social ">
+          <img src="./images/icon-youtube.svg" alt="">
+          <p>
+            @nathanf
+          </p>
+        </div>
+
+        <div class="card__followers">
+          <h3>
+            8239
+          </h3>
+          <p>
+            Followers
+          </p>
+        </div>
+        <div class="card__status ">
+          <img src="./images/icon-down.svg" alt="">
+          <p class="downRed">
+            144 Today
+          </p>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+
+  <section class="overview">
+    <h2 class="overview__title"> Overview - Today </h2>
+    <ul class="overview__list">
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="facebook logo">
+        </div>
+        <div class="card__stadistics">
+          <p>87</p>
+          <p class="upGreen"> <img src="./images/icon-up.svg" alt=""> 3%</p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Likes</p>
+          <img src="./images/icon-facebook.svg" alt="facebook logo">
+        </div>
+        <div class="card__stadistics">
+          <p>52</p>
+          <p class="downRed"> <img src="./images/icon-down.svg" alt=""> 2%</p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Likes</p>
+          <img src="./images/icon-instagram.svg" alt="instagram logo">
+        </div>
+        <div class="card__stadistics">
+          <p>5462</p>
+          <p class="upGreen"><img src="./images/icon-up.svg" alt=""> 2257% </p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="instagram logo">
+        </div>
+        <div class="card__stadistics">
+          <p>52k</p>
+          <p class="upGreen"> <img src="./images/icon-up.svg" alt="">1375%</p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="twitter logo">
+        </div>
+        <div class="card__stadistics">
+          <p>117</p>
+          <p class="upGreen"><img src="./images/icon-up.svg" alt="">303% </p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Likes</p>
+          <img src="./images/icon-twitter.svg" alt="twitter logo">
+        </div>
+        <div class="card__stadistics">
+          <p>507</p>
+          <p class="upGreen"> <img src="./images/icon-up.svg" alt="">553%</p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Likes</p>
+          <img src="./images/icon-youtube.svg" alt="youtube logo">
+        </div>
+        <div class="card__stadistics">
+          <p>107</p>
+          <p class="downRed"> <img src="./images/icon-down.svg" alt="">19%</p>
+        </div>
+      </li>
+      <li class="overview__card">
+        <div class="card__info">
+          <p> Total Views</p>
+          <img src="./images/icon-youtube.svg" alt="youtube logo">
+        </div>
+        <div class="card__stadistics">
+          <p>1407</p>
+          <p class="downRed"><img src="./images/icon-down.svg" alt="">12% </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/gomezlucas?tab=repositories">Lucas D. Gomez</a>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

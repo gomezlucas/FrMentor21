@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/*
+font-family: 'Inter', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --upGreen: hsl(163, 72%, 41%);
+  --downRed: hsl(356, 69%, 56%);
+  --facebook: hsl(195, 100%, 50%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youTube: hsl(348, 97%, 39%);
+
+  /**/
+  --background: hsl(230, 17%, 14%);
+  --darkTopBgPattern: hsl(232, 19%, 15%);
+  --cardBg: hsl(228, 28%, 20%);
+  --text: hsl(228, 34%, 66%);
+  --secondaryText: hsl(0, 0%, 100%);
+  --darkToggle: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+
+[data-theme="light"] {
+  --background: hsl(0, 0%, 100%);
+  --lightTopBgPattern: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
+  --text: hsl(228, 12%, 44%);
+  --secondaryText: hsl(230, 17%, 14%);
+  --lightToggle: hsl(230, 22%, 74%);
+}
+
+/**/
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  transition: all  1s ease;
+}
+
+/* header*/
+header {
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.header__title {
+  color: var(--secondaryText);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header__followers {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--cardBg);
+}
+
+.header__mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.mode__title {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/*Switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+}
+
+.switch:hover {
+  opacity: 0.7;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--darkToggle);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 6px;
+  bottom: 4px;
+  background-color: var(--background);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: var(--lightToggle);
+}
+
+input:checked + .slider:before {
+  background-color: var(--cardBg);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Social Media*/
+.socialMedia {
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.socialMedia__list {
+  list-style-type: none;
+}
+
+.socialMedia__card {
+  text-align: center;
+  background-color: var(--cardBg);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.card__facebook {
+  border-top: 5px solid var(--facebook);
+}
+
+.card__twitter {
+  border-top: 5px solid var(--twitter);
+}
+
+.card__instagram {
+  border-top: 5px solid var(--instagram);
+}
+
+.card__instagram:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: var(--instagram);
+  top: 0;
+  right: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card__youTube {
+  border-top: 4px solid var(--youTube);
+}
+
+.card__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__social p {
+  margin-left: 0.7rem;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.card__followers h3 {
+  font-size: 3.5rem;
+  color: var(--secondaryText);
+  margin: 1.5rem 0 0.1rem 0;
+}
+
+.card__followers p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text);
+  letter-spacing: 0.3rem;
+}
+
+.card__status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.card__status p {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.upGreen {
+  color: var(--upGreen);
+}
+
+.downRed {
+  color: var(--downRed);
+}
+
+/*Overview Section*/
+.overview {
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.overview__title {
+  color: var(--secondaryText);
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.overview__list {
+  list-style-type: none;
+}
+
+.overview__card {
+  background-color: var(--cardBg);
+  padding: 1.7rem;
+  margin: 1rem 0;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__info p {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.card__stadistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card__stadistics :first-child {
+  font-size: 2rem;
+  color: var(--secondaryText);
+  font-weight: 700;
+}
+.card__stadistics :last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__stadistics p img {
+  margin-right: 0.3rem;
+}
+
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--secondaryText)
+}
+
+.attribution a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 500px) {
+  .socialMedia__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .socialMedia__card {
+    max-width: 285px;
+  }
+
+  .overview__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .overview__card {
+    min-width: 200px;
+  }
+}
+
+
+
+@media screen and (min-width: 633px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .header__followers{
+    border: none;
+  }
+
+  .mode__title{
+    margin-right: 1rem;
+  }
+
+  .socialMedia__list {
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .overview__card {
+    min-width: 285px;
+  }
+}
