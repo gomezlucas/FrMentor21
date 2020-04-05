@@ -50,9 +50,10 @@ body {
 
 /* header*/
 header {
-  padding: 2rem 1.5rem;
+  padding:2rem 8rem 0 8rem;
+  
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 
 .header__title {
@@ -157,9 +158,9 @@ input:checked + .slider:before {
 
 /*Social Media*/
 .socialMedia {
-  padding: 2rem 1.5rem;
+  padding: 2rem 8rem 0 8rem;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 
 .socialMedia__list {
@@ -253,9 +254,9 @@ input:checked + .slider:before {
 
 /*Overview Section*/
 .overview {
-  padding: 1rem 1.5rem;
+  padding:2rem 8rem;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 
 .overview__title {
